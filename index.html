@@ -1,20 +1,23 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>index</title>
+    <link rel="stylesheet" href="style.css">
+    <title>Home Page</title>
 </head>
 <body>
     <div class="wrapper">
         <header>
             <nav>
-                <ul>
-                    <li><a href="./getting-started.html">Home</a></li>
+                <img src="#" alt="logo">
+                <ul class="left-nav">
+                    <li><a href="#">Home</a></li>
                     <li><a href="#">About</a></li>
                 </ul>
-                <ul>
-                    <li><a href="/login.html">Login</a></li>
-                    <li><a href="/register.html">Register</a></li>
+                <ul class="right-nav">
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="register.html">Register</a></li>
                 </ul>
             </nav>
         </header>
@@ -23,18 +26,40 @@
                 Categories
             </aside>
             <article class="threads">
-                <h1>Hottest threads</h1>
+                <h1>Recently threads</h1>
+                <a href="thread_form.html">Create a thread</a>
+                
                 <div class="thread">
                     <h1>Thread 1</h1>
                     <p>Some description</p>
+                    <div class="thread-actions">
+                        <button class="interact-button">Like</button>
+                        <button class="interact-button">Comment</button>
+                        <button class="interact-button">Bookmark</button>
+                        <button class="interact-button visit-btn">View Details</button>
+                    </div>
                 </div>
+
                 <div class="thread">
                     <h1>Thread 2</h1>
                     <p>Some description</p>
+                    <div class="thread-actions">
+                        <button class="interact-button">Like</button>
+                        <button class="interact-button">Comment</button>
+                        <button class="interact-button">Bookmark</button>
+                        <button class="interact-button visit-btn">View Details</button>
+                    </div>
                 </div>
+
                 <div class="thread">
                     <h1>Thread 3</h1>
                     <p>Some description</p>
+                    <div class="thread-actions">
+                        <button class="interact-button">Like</button>
+                        <button class="interact-button">Comment</button>
+                        <button class="interact-button">Bookmark</button>
+                        <button class="interact-button visit-btn">View Details</button>
+                    </div>
                 </div>
             </article>
         </main>
@@ -42,11 +67,10 @@
             <div class="newsletter-email">
                 <form action="/addNewListener" method="post">
                     <label for="email">Email:</label>
-                    <input type="email" name="email">
+                    <input type="email" name="email" required>
                     <button type="submit">Send</button>
-                    <!-- <button type="reset">Reset</button> -->
                 </form>
-                <span>Be tune with our newsletter to don't miss new updates!</span>
+                <span>Be tuned with our newsletter to not miss new updates!</span>
             </div>
         </footer>
     </div>

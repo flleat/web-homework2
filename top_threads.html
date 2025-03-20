@@ -22,18 +22,38 @@
             </nav>
         </header>
         <main>
-            <aside></aside>
             <article>
-                <h2>Tread creation form</h2>
-                <form action="/create_thread" method="post">
-                    <label for="title">Tread title:</label>
-                    <input type="text" id="title" name="title" required>
-                    
-                    <label for="message">First message:</label>
-                    <textarea id="message" name="message" rows="4" required></textarea>
-                    
-                    <button type="submit">Create</button>
-                </form>
+                <h2>Top Threads</h2>
+                <table border="1">
+                    <thead>
+                        <tr>
+                            <th>Title</th>
+                            <th>Author</th>
+                            <th>Replies</th>
+                            <th>Views</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Thread 1</td>
+                            <td>User 1</td>
+                            <td>15</td>
+                            <td>300</td>
+                        </tr>
+                        <tr>
+                            <td>Thread 2</td>
+                            <td>User 2</td>
+                            <td>25</td>
+                            <td>450</td>
+                        </tr>
+                        <tr>
+                            <td>Thread 3</td>
+                            <td>User 3</td>
+                            <td>10</td>
+                            <td>200</td>
+                        </tr>
+                    </tbody>
+                </table>
             </article>
         </main>
         <footer>

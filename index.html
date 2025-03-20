@@ -12,7 +12,7 @@
             <nav>
                 <img src="#" alt="logo">
                 <ul class="left-nav">
-                    <li><a href="#">Home</a></li>
+                    <li><a href="index.html">Home</a></li>
                     <li><a href="#">About</a></li>
                 </ul>
                 <ul class="right-nav">
@@ -23,20 +23,26 @@
         </header>
         <main>
             <aside>
-                Categories
+                <h2>Categories</h2>
+                <ul>
+                    <li><a href="#">General</a></li>
+                    <li><a href="#">Technology</a></li>
+                    <li><a href="#">Entertainment</a></li>
+                </ul>
             </aside>
             <article class="threads">
-                <h1>Recently threads</h1>
+                <h1>Hottest threads</h1>
+                <a href="top_threads.html">Top treads</a>
                 <a href="thread_form.html">Create a thread</a>
-                
+
                 <div class="thread">
                     <h1>Thread 1</h1>
                     <p>Some description</p>
                     <div class="thread-actions">
-                        <button class="interact-button">Like</button>
-                        <button class="interact-button">Comment</button>
-                        <button class="interact-button">Bookmark</button>
-                        <button class="interact-button visit-btn">View Details</button>
+                        <button class="fit-btn like-btn">Like</button>
+                        <button class="fit-btn comment-btn">Comment</button>
+                        <button class="fit-btn bookmark-btn">Bookmark</button>
+                        <button class="fit-btn view-btn">View Details</button>
                     </div>
                 </div>
 
@@ -44,10 +50,10 @@
                     <h1>Thread 2</h1>
                     <p>Some description</p>
                     <div class="thread-actions">
-                        <button class="interact-button">Like</button>
-                        <button class="interact-button">Comment</button>
-                        <button class="interact-button">Bookmark</button>
-                        <button class="interact-button visit-btn">View Details</button>
+                        <button class="fit-btn like-btn">Like</button>
+                        <button class="fit-btn comment-btn">Comment</button>
+                        <button class="fit-btn bookmark-btn">Bookmark</button>
+                        <button class="fit-btn view-btn">View Details</button>
                     </div>
                 </div>
 
@@ -55,12 +61,18 @@
                     <h1>Thread 3</h1>
                     <p>Some description</p>
                     <div class="thread-actions">
-                        <button class="interact-button">Like</button>
-                        <button class="interact-button">Comment</button>
-                        <button class="interact-button">Bookmark</button>
-                        <button class="interact-button visit-btn">View Details</button>
+                        <button class="fit-btn like-btn">Like</button>
+                        <button class="fit-btn comment-btn">Comment</button>
+                        <button class="fit-btn bookmark-btn">Bookmark</button>
+                        <button class="fit-btn view-btn">View Details</button>
                     </div>
                 </div>
+
+                <h2>External Resource</h2>
+                <iframe src="" width="600" height="400"></iframe>
+
+                <h2>Embed YouTube Video</h2>
+                <embed src="https://www.youtube.com/embed/dQw4w9WgXcQ" width="600" height="350">
             </article>
         </main>
         <footer>
@@ -68,7 +80,7 @@
                 <form action="/addNewListener" method="post">
                     <label for="email">Email:</label>
                     <input type="email" name="email" required>
-                    <button type="submit">Send</button>
+                    <button type="submit" class="fit-btn">Send</button>
                 </form>
                 <span>Be tuned with our newsletter to not miss new updates!</span>
             </div>

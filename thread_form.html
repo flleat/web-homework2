@@ -1,13 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <title>Creation Thread</title>
 </head>
 <body>
-    <div class="wrapper">
+    <div>
         <header>
             <nav>
                 <img src="#" alt="logo">
@@ -21,23 +21,70 @@
                 </ul>
             </nav>
         </header>
+
         <main>
-            <aside></aside>
             <article>
-                <h2>Tread creation form</h2>
+                <h2>Форма створення треда</h2>
                 <form action="/create_thread" method="post">
-                    <label for="title">Tread title:</label>
+                    <label for="title">Thread title:</label>
                     <input type="text" id="title" name="title" required>
-                    
-                    <label for="message">First message:</label>
+
+                    <label for="message">Thread content:</label>
                     <textarea id="message" name="message" rows="4" required></textarea>
+
+                    <div>
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required><br>
+                    </div>
+
+                    <div>
+                        <label for="phone">Phonenumber:</label>
+                        <input type="tel" id="phone" name="phone" placeholder="+380" required>
+                    </div>
+
+                    <div>
+                        <label for="birthdate">BDay:</label>
+                        <input type="date" id="birthdate" name="birthdate" required>
+                    </div>
+
+                    <div>
+                        <label for="color">Theme color:</label>
+                        <input type="color" id="color" name="color">
+                    </div>
                     
+                    <div>
+                        <label>Access by link:</label>
+                        <input type="radio" id="male" name="gender" value="male">
+                        <label for="male">Yes</label>
+                        <input type="radio" id="female" name="gender" value="female">
+                        <label for="female">No</label>
+                    </div>
+
+                    <div></div>
+                    <label for="subscribe">Notify when reply:</label>
+                    <input type="checkbox" id="subscribe" name="subscribe" value="yes">
+
+                    <div>
+                        <label for="file">Download files:</label>
+                        <input type="file" id="file" name="file">
+                    </div>
+
+                    <div>
+                        <label for="options">Category</label>
+                        <select id="options" name="options">
+                        <option value="option1">General</option>
+                        <option value="option2">Technology</option>
+                        <option value="option3">Entertainment</option>
+                    </select>
+                    </div>
+
                     <button type="submit">Create</button>
+                    <button type="reset">Reset</button>
                 </form>
             </article>
         </main>
         <footer>
-            <div class="newsletter-email">
+            <div>
                 <form action="/addNewListener" method="post">
                     <label for="email">Email:</label>
                     <input type="email" name="email" required>

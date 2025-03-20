@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -70,27 +74,21 @@ nav ul li a:hover {
     margin-bottom: 10px;
 }
 
-label {
-    display: block;
-    margin-bottom: 5px;
-    font-weight: bold;
-}
-
-input[type="checkbox"] {
-    margin-right: 5px;
-}
-
 input[type="submit"],
 button {
     font-size: 16px;
+    border: none;
+    margin-top: 20px;
+}
+
+button {
     background-color: #5c6bc0;
     color: white;
-    border: none;
     padding: 10px 20px;
+    border: none;
     cursor: pointer;
     border-radius: 4px;
     width: 100%;
-    margin-top: 20px;
 }
 
 input[type="submit"]:hover,
@@ -98,7 +96,6 @@ button:hover {
     background-color: #3f51b5;
 }
 
-/* Register link */
 span a {
     color: #5c6bc0;
     text-decoration: none;
@@ -117,6 +114,10 @@ main {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+main iframe, main embed {
+    justify-content: center;
+}
+
 article h2 {
     text-align: center;
     font-size: 24px;
@@ -124,9 +125,12 @@ article h2 {
 }
 
 label {
-    display: block;
     margin-bottom: 5px;
     font-weight: bold;
+}
+
+main form div {
+    margin: 10px 0;
 }
 
 input[type="email"],
@@ -135,25 +139,16 @@ input[type="text"],
 textarea {
     width: 100%;
     padding: 8px;
+    margin: 0;
     margin-bottom: 20px;
     border: 1px solid #ccc;
     border-radius: 4px;
 }
 
-input[type="email"] {
+footer input[type="email"] {
     width: fit-content;
     font-size: 14px;
-    padding: 6px 8px;
-}
-
-button {
-    background-color: #5c6bc0;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    cursor: pointer;
-    border-radius: 4px;
-    width: 100%;
+    padding: 8px 10px;
 }
 
 button:hover {
@@ -161,20 +156,15 @@ button:hover {
 }
 
 .threads .thread:first-of-type {
-    margin-top: 10px;
+    margin-top: 20px;
 }
 
 .thread {
-    background-color: #f9f9f9; /* Світло-сірий фон */
+    background-color: #f9f9f9;
     padding: 15px;
-    border-radius: 8px; /* Закруглені кути */
     border-left: 3px solid #3f51b5;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* Легка тінь */
+    border-radius: 4px;
     margin-bottom: 20px;
-}
-
-.fit-btn {
-    width: fit-content;
 }
 
 footer {
@@ -192,15 +182,15 @@ footer {
     min-height: 100vh;
 }
 
-main {
-    flex-grow: 1;
+.fit-btn {
+    width: fit-content;
 }
 
 aside {
-    width: 200px;
+    width: 100%;
     background-color: #f9f9f9;
-    padding: 10px;
-    margin-right: 20px;
+    border-radius: 4px;
+    padding: 20px;
 }
 
 table {
